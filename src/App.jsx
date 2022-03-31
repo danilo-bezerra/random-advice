@@ -1,7 +1,6 @@
 import './App.css'
 import Advice from './Advice'
 
-// funcion that create a footer with author name and date
 function Footer() {
     const date = new Date()
     const year = date.getFullYear()
