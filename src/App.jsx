@@ -1,43 +1,29 @@
-import { useState } from 'react'
-import logo from './logo.svg'
 import './App.css'
+import Advice from './Advice'
+
+// funcion that create a footer with author name and date
+function Footer() {
+    const date = new Date()
+    const year = date.getFullYear()
+    const styles = {
+        color: '#fff', 
+        position: 'absolute',
+        bottom: '2rem',
+        width: '100%'
+    }
+
+    return (
+        <footer style={styles}>
+            <p>&copy; {year} - Danilo Bezerra frontendmentor challenge solution</p>
+        </footer>
+    )
+}
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
+      <Advice />
+      <Footer />
     </div>
   )
 }
