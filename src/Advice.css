@@ -1,20 +1,20 @@
 .Advice {
     position: relative;
     background-color: #323949;
-    padding: 30px 20px;
+    padding: 40px 20px 30px 20px;
     width: 600px;
     max-width: 90%;
     margin: 0 auto;
-    border-radius: 5px;
+    border-radius: 8px;
     margin-top: 50vh;
     transform: translateY(-50%);
-    box-shadow: 5px 5px 10px #52f9a817;
+    box-shadow: 0 0 15px #212530;
 }
 
 .Advice h2 {
     color: #52F9A9;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: .8rem;
     letter-spacing: 2px;
     margin-bottom: 1rem;
 }
@@ -22,6 +22,7 @@
 .Advice p {
     color: #D6E2EF;
     font-size: 2em;
+    font-weight: 500;
 }
 
 .separator {
@@ -50,7 +51,7 @@ button {
     left: 50%;
     bottom: 0;
     background-color: #52F9A9;
-    box-shadow: 0 0 10px #ffffff28;
+    box-shadow: 0 0 15px #212530;
     border-radius: 50%;
     width: 4rem;
     height: 4rem;
@@ -60,7 +61,7 @@ button {
 
 button:hover {
     transform: scale(1.1) translate(-50%, 50%);
-    box-shadow: 0 0 10px #ffffff60;
+    box-shadow: 0 0 25px #212530;
 }
 
 button i {
