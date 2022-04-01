@@ -13,7 +13,7 @@ function Footer() {
 
     return (
         <footer style={styles}>
-            <p>&copy; {year} - Danilo Bezerra frontendmentor challenge solution</p>
+            <p>&copy; {year} - Danilo Bezerra</p>
         </footer>
     )
 }
