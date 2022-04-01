@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Loading from './Loading'
 import './Advice.css'
 
 export default function Advice() {
@@ -14,12 +15,13 @@ export default function Advice() {
 
     if (!advice) {
         getNewAdvice()
+        return <Loading />
     }
 
     return (
         <div className='Advice'>
-            <h2>advice #{advice?.id ?? 'loading...'}</h2>
-            <p><q>{advice?.advice ?? 'loading...'}</q></p>
+            <h2>advice #{advice?.id}</h2>
+            <p><q>{advice?.advice}</q></p>
             <div className='separator'>
                 <hr />
                 <i className="fa-solid fa-grip-lines-vertical"></i>
